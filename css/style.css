@@ -1,0 +1,95 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family: 'Open Sans', sans-serif;
+	background: linear-gradient(135deg, #00c4cc 25%, #016BC0 75%);
+	background-attachment: fixed;
+}
+header{
+	background: transperant;
+	width: 100%;
+	padding: 40px 0 0px 0;
+	color: white;
+	text-align: center;
+}
+a{
+	text-decoration: none;
+	color: inherit;
+}
+nav ul{
+	background-color: transperant;
+	overflow: hidden;
+	color: white;
+	padding: 0;
+	text-align: center;
+	margin: 0;
+	-webkit-transition: all 0.3s linear 0s;
+	-moz-transition: all 0.3s linear 0s;
+	-ms-transition: all 0.3s linear 0s;
+	-o-transition: all 0.3s linear 0s;
+	transition: all 0.3s linear 0s;
+}
+nav ul li{
+	display: inline-block;
+	padding: 20px;
+	cursor:pointer;
+	-webkit-transition: all 0.3s linear 0s;
+	-moz-transition: all 0.3s linear 0s;
+	-ms-transition: all 0.3s linear 0s;
+	-o-transition: all 0.3s linear 0s;
+	transition: all 0.3s linear 0s;
+}
+nav ul li:hover{
+	color:#b3d1ff;
+}
+section{
+	line-height: 1.5em;
+	font-size: 0.9em;
+	padding: 40px;
+	width: 75%;
+	margin: 0 auto;
+	background: #ffffff;
+	padding: 3em;
+	border-radius:12px;
+}
+.handle{
+	width: 100%;
+	text-align: left;
+	box-sizing: border-box;
+	padding: 0px 10px 25px 30px;
+	cursor: pointer;
+	color: white;
+	display: none;
+}
+.handle i{
+	color:#ffffff;
+	font-size:24px;
+}
+@media screen and (max-width: 580px){
+	nav ul{
+		max-height: 0;
+		
+	}
+	.showing{
+		max-height: 20em;
+	}
+	nav ul li{
+		box-sizing: border-box;
+		width: 89%;
+		padding: 15px;
+		margin-left:20px;
+		margin-right:20px;
+		text-align: left;
+		border-bottom:1px solid #46a8e7;
+	}
+	nav ul li:last-of-type{
+		border-bottom:none;
+	}
+	.handle{
+		display: block;
+	}
+	nav ul li:hover{
+		background-color:rgba(208,208,208,0.2);
+		color:#ffffff;
+	}
+}
